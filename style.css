@@ -68,7 +68,20 @@ div.goner {
     animation-timing-function: linear;
 }
 
-
+.ue-tab21note {
+	pointer-events: none;
+	font-family: '8bitoperator JVE';
+	font-size: 16px;
+	color: white;
+	position: fixed;
+	vertical-align: top;
+	text-align: left;
+	margin-left: 6px;
+	margin-top: -12px;
+	width: 320px;
+	opacity: 0;
+	transition: opacity 0.15s ease-out 0ms;
+}
 .ue-tab21 {
 	position: fixed;
 	vertical-align: top;
@@ -82,6 +95,9 @@ div.goner {
 .ue-tab21:hover {
 	right: -0px;
 }
+.ue-tab21:hover > .ue-tab21note {
+	opacity: 1;
+}
 .ue-tab22 {
 	position: fixed;
 	vertical-align: top;
@@ -91,10 +107,63 @@ div.goner {
 	top: 136px;
 	right: -80px;
 	transition: right 0.15s ease-out 0ms;
-	z-index: 10;
+	z-index: 9;
 }
 .ue-tab22:hover {
 	right: -0px;
+}
+
+.nav-tab {
+	position: fixed;
+	float: left;
+	vertical-align: top;
+	width: 404px;
+	height: 120px;
+	left: -280px;
+	transition: left 0.15s ease-out 0ms;
+	z-index: 10;
+}
+.nav-tab-name {
+	pointer-events: none;
+	position: absolute;
+	color: white;
+	font-family: '8bitoperator JVE';
+	font-size: 48px;
+	text-align: left;
+	margin-left: 104px;
+	margin-top: 20px;
+}
+.nav-tab-desc {
+	pointer-events: none;
+	position: absolute;
+	font-family: '8bitoperator JVE';
+	color: gray;
+	width: 190px;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 106px;
+	margin-top: 64px;
+	opacity: 0;
+	transition: opacity 0.15s ease-out 0ms;
+	
+}
+.nav-tab.home {
+	
+}
+.nav-tab.projects {
+	top: 136px;
+}
+.nav-tab.team {
+	top: 248px;
+}
+.nav-tab.links {
+	top: 360px;
+}
+.nav-tab:hover {
+	left: -80px;
+}
+.nav-tab:hover > .nav-tab-desc {
+	opacity: 1;
 }
 
 .logo-large {
@@ -144,6 +213,7 @@ div.goner {
 	margin-left: -8px;
 	margin-top: -8px;
 	position: absolute;
+	pointer-events: none;
 	opacity: 0;
 	z-index: 15;
 	overflow-x: hidden;
