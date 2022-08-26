@@ -1,11 +1,11 @@
 @font-face {
     font-family: '8bitoperator JVE';
-    src: url('asset/font/8bitoperator-JVE.woff');
+    src: url('./asset/font/8bitoperator-JVE.woff');
 }
 @font-face {
     font-family: '8bitoperator Reg';
 	font-size: 100%;
-    src: url('asset/font/8bitOperatorPlus-Regular.woff');
+    src: url('./asset/font/8bitOperatorPlus-Regular.woff');
 }
 
 img {
